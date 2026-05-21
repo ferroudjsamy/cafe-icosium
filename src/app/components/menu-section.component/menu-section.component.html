@@ -1,1 +1,29 @@
-<p>menu-section.component works!</p>
+<section class="bg-[#f7f1e8] px-10 py-32 text-[#1b120c]">
+  <div class="mx-auto max-w-7xl">
+    <div class="mb-10 flex items-end justify-between">
+      <div>
+        <p class="text-2xl italic text-[#C08B45]">Découvrez</p>
+        <h2 class="mt-2 text-5xl font-bold">Notre Menu</h2>
+      </div>
+
+      <div class="hidden items-center gap-4 md:flex">
+        <button class="rounded-full cursor-pointer bg-[#120c08] px-6 py-3 text-white">Cafés</button>
+        <button class="rounded-full cursor-pointer bg-[#eee5dc] px-6 py-3">Crêpes</button>
+        <button class="rounded-full cursor-pointer bg-[#eee5dc] px-6 py-3">Pâtisseries</button>
+        <button class="rounded-full cursor-pointer bg-[#eee5dc] px-6 py-3">Boissons froides</button>
+        <button class="rounded-full cursor-pointer bg-[#eee5dc] px-6 py-3">Desserts</button>
+      </div>
+
+      <a class="hidden cursor-pointer text-[#A66A2A] md:block">
+        Voir le menu complet →
+      </a>
+    </div>
+
+    <div class="grid gap-8 md:grid-cols-4">
+      <app-menu-card></app-menu-card>
+      <app-menu-card></app-menu-card>
+      <app-menu-card></app-menu-card>
+      <app-menu-card></app-menu-card>
+    </div>
+  </div>
+</section>
